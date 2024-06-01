@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmarker</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="itmes">
+        <div class="container ">
+            <div class="row  py-5">
+                <h1 class="text-center"><span class="position-relative">Bookmarker  </span> </h1> 
+    <div class="itme d-flex align-items-center justify-content-center pt-5">
+    <h2>
+        <i class="fa-solid fa-bookmark pe-2 fa-2x text-success"></i>
+         Bookmark your favorite sites 
+        <i class="fa-solid fa-bookmark fa-2x text-warning"></i>
+    </h2>
+    </div>
+    <div class=" book-mark w-100 mb-4  ">
+        <label class="fw-bold"  for="bookmarkName">
+            <i class="fa-solid fa-book-bookmark pb-2 ps-auto"></i>
+            Site Name
+        </label>
+        <input oninput="validationName()" id="addInputName" class="w-100 form-control " type="text" placeholder="Bookmark Name">
+   
+       
+        
+    <div class=" book-mark w-100  ">
+        <label class="fw-bold"  for="bookmarkUrl">
+            <i class="fa-solid fa-link pb-2 "></i>
+            Site URL
+        </label>
+        <input oninput="validationUrl()" id="addInputUrl" class="w-100 form-control" type="url" placeholder="Website URL">
+       
+    </div>
+    <div id="msInput" class="bg-light p-3 d-none  zindex ">
+        <div class=" d-flex justify-content-between  align-items-center">
+            <div class="icon d-flex mt-2">
+                <span class="rounded-circle me-2"></span>
+            <span class="rounded-circle me-2"></span>
+            <span class="rounded-circle me-2"></span>
+            </div>
+            <div>
+                <button class="border-0 mt-2">
+                    <i class="fa-solid fa-xmark fs-3 "></i>
+                   </button>
+            </div>
+        
+        </div>
+      
+<p>Site Name or Url is not valid, Please follow the rules below :</p>
+   
+    <ol class="mt-3">
+        <li>
+            <i class="fa-regular fa-circle-right p-2 "></i>
+            Site name must contain at least 3 characters
+        </li>
+    </ol>
+    <ol >
+        <li>
+            <i class="fa-regular fa-circle-right p-2"></i>
+            Site name must contain at least 3 characters
+        </li>
+    </ol>
+    </div>
+    </div>
+</div>
+    <div class="botn text-center my-4">
+        <button onclick="addBtn()" id="addName" class="btn  px-5 rounded-2">Add submit</button>
+        <button onclick="updateInput()" id="apdName" class="btn  px-5 rounded-2 d-none">Apdate submit</button>
+    </div>
+    
+
+   
+
+    <input id="searchInput" oninput="display()" class="w-50 mx-auto form-control" type="search" placeholder="search By Name">
+    
+
+    
+
+           
+            </div>
+            <table class="table text-center bg-light  fs-6">
+                <thead>
+                    <tr class="">
+                        <th class="pe-5">Index</th>
+                        <th class="pe-5">Website Name</th>
+                        <th class="pe-5">Visit</th>
+                        <th class="pe-5">Delete</th>
+                    </tr>
+                
+                </thead>
+                <tbody id="omar">
+                  
+                  
+                </tbody>
+            </table>
+        </div>
+    </div>
+   
+    <script src="main.js"></script>
+</body>
+</html>
+
+
